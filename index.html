@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing Plates - Reducing Food Waste, Feeding Communities</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./img/SHARING PLATES.png" alt="Sharing Plates Logo" />
+                <h1>Sharing Plates</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#share-food">Share Food</a></li>
+                <li><a href="#find-food">Find Food</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Reduce Food Waste, Feed Communities</h2>
+                <p>Connect excess food from events with those who need it most.</p>
+                <div class="cta-buttons">
+                    <a href="#share-food" class="btn btn-primary">Share Food</a>
+                    <a href="#find-food" class="btn btn-secondary">Find Food</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Sharing Plates</h2>
+                <p>Sharing Plates is a platform that connects event organizers with excess food to local students and those in need. Our mission is to reduce food waste and create a community of sharing and support.</p>
+                <img src="./img/image.png" alt="People sharing food" class="about-image">
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Event Organizers</h3>
+                        <p>Post your event details and available food</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-search"></i>
+                        <h3>Students & Community</h3>
+                        <p>Search for available food near you</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Connect</h3>
+                        <p>Coordinate food pickup or on-site dining</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="share-food">
+            <div class="container">
+                <h2>Share Your Excess Food</h2>
+                <form id="share-food-form">
+                    <input type="text" id="event-name" placeholder="Event Name" required>
+                    <input type="text" id="location" placeholder="Location" required>
+                    <input type="datetime-local" id="datetime" required>
+                    <textarea id="food-description" placeholder="Describe the available food" required></textarea>
+                    <select id="sharing-method" required>
+                        <option value="">Select sharing method</option>
+                        <option value="pickup">Available for pickup</option>
+                        <option value="onsite">Join event on-site</option>
+                    </select>
+                    <select id="food-type" required>
+                        <option value="">Select food type</option>
+                        <option value="catered">Catered Event</option>
+                        <option value="restaurant">Restaurant Surplus</option>
+                        <option value="homemade">Homemade</option>
+                        <option value="groceries">Groceries</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="find-food">
+            <div class="container">
+                <h2>Find Available Food</h2>
+                <div class="food-type-filter">
+                    <button class="filter-btn active" data-type="all">All</button>
+                    <button class="filter-btn" data-type="catered">Catered</button>
+                    <button class="filter-btn" data-type="restaurant">Restaurant</button>
+                    <button class="filter-btn" data-type="homemade">Homemade</button>
+                    <button class="filter-btn" data-type="groceries">Groceries</button>
+                </div>
+                <div id="food-listings" class="food-grid">
+                    <!-- Food listings will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sharing Plates. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
